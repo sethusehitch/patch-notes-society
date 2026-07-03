@@ -90,7 +90,7 @@ def validate_local_links(path):
 
 
 def main():
-    html_paths = ["index.html", "share.html", "evidence.html", "expert/001-prisons-reviewer-bundle.html"] + [f"issues/{issue}.html" for issue in REQUIRED_ISSUES]
+    html_paths = ["index.html", "share.html", "review-queue.html", "evidence.html", "expert/001-prisons-reviewer-bundle.html"] + [f"issues/{issue}.html" for issue in REQUIRED_ISSUES]
     for path in html_paths:
         if not (ROOT / path).exists():
             fail(f"missing required page {path}")
@@ -117,7 +117,7 @@ def main():
     validate_xml("sitemap.xml")
 
     sitemap = read("sitemap.xml")
-    for url in [SITE, SITE + "share.html", SITE + "evidence.html", SITE + "expert/001-prisons-reviewer-bundle.html", SITE + "feed.xml", SITE + "llms.txt"]:
+    for url in [SITE, SITE + "share.html", SITE + "review-queue.html", SITE + "evidence.html", SITE + "expert/001-prisons-reviewer-bundle.html", SITE + "feed.xml", SITE + "llms.txt"]:
         if url not in sitemap:
             fail(f"sitemap missing {url}")
     for issue in REQUIRED_ISSUES:

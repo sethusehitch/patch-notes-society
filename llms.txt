@@ -11,6 +11,7 @@ v0.2 review hub: https://github.com/sethusehitch/patch-notes-society/issues/1
 Contributing guide: https://github.com/sethusehitch/patch-notes-society/blob/main/CONTRIBUTING.md
 Triage guide: https://github.com/sethusehitch/patch-notes-society/blob/main/TRIAGE.md
 Share kit: https://sethusehitch.github.io/patch-notes-society/share.html
+Reviewer queue: https://sethusehitch.github.io/patch-notes-society/review-queue.html
 Evidence and source index: https://sethusehitch.github.io/patch-notes-society/evidence.html
 Prisons policy memo reviewer bundle: https://sethusehitch.github.io/patch-notes-society/expert/001-prisons-reviewer-bundle.html
 RSS feed: https://sethusehitch.github.io/patch-notes-society/feed.xml

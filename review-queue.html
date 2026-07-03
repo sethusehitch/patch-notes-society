@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="alternate" type="application/rss+xml" title="Patch Notes for Society" href="https://sethusehitch.github.io/patch-notes-society/feed.xml">
+  <link rel="alternate" type="text/plain" title="llms.txt" href="https://sethusehitch.github.io/patch-notes-society/llms.txt">
+  <link rel="icon" href="/patch-notes-society/assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:image" content="https://sethusehitch.github.io/patch-notes-society/assets/social-card.png">
+  <meta name="twitter:image" content="https://sethusehitch.github.io/patch-notes-society/assets/social-card.png">
+  <title>Reviewer Queue | Patch Notes for Society</title>
+  <meta name="description" content="The current critique queue for Patch Notes for Society: which papers need review, what kind of feedback is useful, and what becomes policy-grade next.">
+  <link rel="canonical" href="https://sethusehitch.github.io/patch-notes-society/review-queue.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Reviewer Queue | Patch Notes for Society">
+  <meta property="og:description" content="Which Patch Notes papers need review now, what kind of feedback is useful, and what becomes policy-grade next.">
+  <meta property="og:url" content="https://sethusehitch.github.io/patch-notes-society/review-queue.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Reviewer Queue | Patch Notes for Society">
+  <meta name="twitter:description" content="Which Patch Notes papers need review now, what kind of feedback is useful, and what becomes policy-grade next.">
+  <style>
+    :root { color-scheme: light; --ink:#18212f; --muted:#617083; --line:#d9e0e8; --bg:#f7f8fa; --panel:#fff; --accent:#0f766e; --blue:#2563eb; --warn:#b45309; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; color:var(--ink); background:var(--bg); line-height:1.58; }
+    header, main, footer { width:min(1080px,calc(100% - 36px)); margin:0 auto; }
+    header { padding:38px 0 20px; }
+    .back { display:inline-flex; margin-bottom:18px; color:#0f5f8c; font-weight:720; text-decoration:none; }
+    h1 { max-width:820px; margin:0 0 12px; font-size:clamp(36px,6vw,72px); line-height:.96; letter-spacing:0; }
+    h2 { margin:0 0 14px; font-size:26px; }
+    h3 { margin:0 0 8px; font-size:20px; }
+    p, li { font-size:16px; }
+    .lede { max-width:820px; color:#354255; font-size:19px; }
+    .actions, .mini { display:flex; gap:10px; flex-wrap:wrap; }
+    .actions { margin-top:22px; }
+    .button, .mini a { display:inline-flex; align-items:center; min-height:36px; padding:0 11px; border:1px solid var(--line); border-radius:7px; background:#fff; color:#0f5f8c; text-decoration:none; font-weight:720; }
+    section { margin:16px 0; padding:22px; border:1px solid var(--line); border-radius:8px; background:var(--panel); }
+    .queue { display:grid; gap:12px; }
+    .item { display:grid; grid-template-columns:88px 1fr; gap:14px; padding:16px; border:1px solid var(--line); border-radius:8px; background:#fbfcfd; }
+    .rank { display:flex; align-items:center; justify-content:center; min-height:54px; border-radius:8px; color:#fff; background:var(--accent); font-weight:800; }
+    .rank.blue { background:var(--blue); }
+    .rank.warn { background:var(--warn); }
+    .meta { color:var(--muted); font-size:14px; }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+    .card { padding:16px; border:1px solid var(--line); border-radius:8px; background:#fbfcfd; }
+    .note { border-left:4px solid var(--accent); color:#334155; }
+    ul { margin:10px 0 0; padding-left:20px; }
+    a { color:#0f5f8c; text-underline-offset:3px; }
+    footer { padding:28px 0 42px; color:var(--muted); font-size:14px; }
+    @media(max-width:820px) { .item, .grid { grid-template-columns:1fr; } section { padding:18px; } }
+  </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Patch Notes for Society Reviewer Queue",
+  "description": "The current critique queue for Patch Notes for Society: which papers need review, what kind of feedback is useful, and what becomes policy-grade next.",
+  "url": "https://sethusehitch.github.io/patch-notes-society/review-queue.html",
+  "isPartOf": {
+    "@id": "https://sethusehitch.github.io/patch-notes-society/#website"
+  }
+}
+</script>
+</head>
+<body>
+<header>
+  <a class="back" href="./">Patch Notes for Society</a>
+  <h1>Reviewer Queue</h1>
+  <p class="lede">The fastest way to improve this project is targeted criticism. This page shows what needs review now, which issue is likely to become policy-grade next, and what kind of feedback is most useful.</p>
+  <div class="actions">
+    <a class="button" href="./">Public papers</a>
+    <a class="button" href="evidence.html">Evidence index</a>
+    <a class="button" href="expert/001-prisons-reviewer-bundle.html">Prisons memo</a>
+    <a class="button" href="https://github.com/sethusehitch/patch-notes-society/issues/new/choose">Submit feedback</a>
+  </div>
+</header>
+<main>
+  <section class="note">
+    <h2>Review Rule</h2>
+    <p>Agreement is welcome, but critique is more valuable. The best feedback names a specific claim, source, missing category, implementation risk, metric that could be gamed, or population the paper handles too broadly.</p>
+  </section>
+
+  <section>
+    <h2>Current Priority Queue</h2>
+    <div class="queue">
+      <article class="item">
+        <div class="rank">#001</div>
+        <div>
+          <h3>Prisons: move memo v0.1 toward v0.2</h3>
+          <p>The public paper and expert reviewer bundle are live. The next useful feedback is implementation-grade: evidence strength, victim-accountability guardrails, staffing/funding assumptions, pilot design, reentry barriers, and metrics.</p>
+          <div class="mini">
+            <a href="issues/001-prisons.html">Paper</a>
+            <a href="expert/001-prisons-reviewer-bundle.html">Expert bundle</a>
+            <a href="expert/001-prisons-evidence-matrix-v0.1.md">Evidence matrix</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="rank blue">Next</div>
+        <div>
+          <h3>#005 Addiction / Mental Health: strongest next companion issue</h3>
+          <p>This is the natural continuation from prisons because it touches courts, jails, homelessness, emergency rooms, families, public safety, civil liberties, and care capacity. Review should focus on autonomy, coercion, capacity, rights, crisis response, and separating addiction, serious mental illness, homelessness, crime, and public disorder.</p>
+          <div class="mini">
+            <a href="issues/005-addiction-mental-health.html">Paper</a>
+            <a href="papers/005-addiction-mental-health.md">Markdown</a>
+            <a href="evidence.html#005-addiction-mental-health">Sources</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="rank blue">2</div>
+        <div>
+          <h3>#003 Healthcare Affordability: broadest evidence challenge</h3>
+          <p>Healthcare has strong public demand but needs careful separation of prices, utilization, administrative cost, insurance design, provider capacity, market power, drugs/PBMs, employers, public budgets, and medical debt.</p>
+          <div class="mini">
+            <a href="issues/003-healthcare.html">Paper</a>
+            <a href="papers/003-healthcare.md">Markdown</a>
+            <a href="evidence.html#003-healthcare">Sources</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="rank blue">3</div>
+        <div>
+          <h3>#002 Housing / Homelessness: most concrete local-systems test</h3>
+          <p>Housing is ready for land-use, tenant-protection, homelessness-services, public-space, and local-operator critique. The key review question is whether the paper separates affordability, homelessness, supportive housing, supply, subsidies, services, and prevention clearly enough.</p>
+          <div class="mini">
+            <a href="issues/002-housing.html">Paper</a>
+            <a href="papers/002-housing.md">Markdown</a>
+            <a href="evidence.html#002-housing">Sources</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>What Different Reviewers Can Do</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Researchers</h3>
+        <p>Find overclaims, stale sources, weak causal claims, missing counterevidence, bad metrics, and places where the paper should downgrade certainty.</p>
+      </article>
+      <article class="card">
+        <h3>Operators and practitioners</h3>
+        <p>Name the staffing, procurement, workflow, legal authority, data, funding, training, safety, or implementation constraint that would break the plan first.</p>
+      </article>
+      <article class="card">
+        <h3>Advocates and affected people</h3>
+        <p>Point out whose experience is flattened, who would be burdened, where language creates harm, and what protection or accountability is missing.</p>
+      </article>
+      <article class="card">
+        <h3>Policymakers and funders</h3>
+        <p>Pressure-test jurisdiction, budget, eligibility, measurement, pilot size, public legitimacy, failure conditions, and what should happen before scale.</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Submit The Most Useful Kind Of Feedback</h2>
+    <ul>
+      <li><a href="https://github.com/sethusehitch/patch-notes-society/issues/new?template=issue-specific-critique.yml">Issue-specific critique</a>: what is wrong, missing, or overstated?</li>
+      <li><a href="https://github.com/sethusehitch/patch-notes-society/issues/new?template=source-correction.yml">Source correction</a>: what source should be added, removed, corrected, or narrowed?</li>
+      <li><a href="https://github.com/sethusehitch/patch-notes-society/issues/new?template=implementation-risk.yml">Implementation risk</a>: what would fail, backfire, or be gamed?</li>
+      <li><a href="https://github.com/sethusehitch/patch-notes-society/issues/new?template=general-feedback.yml">General feedback</a>: what should the project change about format, sequencing, or review process?</li>
+    </ul>
+  </section>
+</main>
+<footer>Patch Notes for Society. Public drafts for critique, revision, and better system design.</footer>
+</body>
+</html>

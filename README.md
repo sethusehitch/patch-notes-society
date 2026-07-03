@@ -8,6 +8,7 @@ This is a civic systems project, not a claim that first drafts solve hard public
 
 - Public site: https://sethusehitch.github.io/patch-notes-society/
 - Share kit: https://sethusehitch.github.io/patch-notes-society/share.html
+- Reviewer queue: https://sethusehitch.github.io/patch-notes-society/review-queue.html
 - Evidence and source index: https://sethusehitch.github.io/patch-notes-society/evidence.html
 - Prisons policy memo reviewer bundle: https://sethusehitch.github.io/patch-notes-society/expert/001-prisons-reviewer-bundle.html
 - RSS feed: https://sethusehitch.github.io/patch-notes-society/feed.xml
