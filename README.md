@@ -8,6 +8,7 @@ This is a civic systems project, not a claim that first drafts solve hard public
 
 - Public site: https://sethusehitch.github.io/patch-notes-society/
 - Share kit: https://sethusehitch.github.io/patch-notes-society/share.html
+- Evidence and source index: https://sethusehitch.github.io/patch-notes-society/evidence.html
 - RSS feed: https://sethusehitch.github.io/patch-notes-society/feed.xml
 - Feedback forms: https://github.com/sethusehitch/patch-notes-society/issues/new/choose
 - v0.2 review hub: https://github.com/sethusehitch/patch-notes-society/issues/1
