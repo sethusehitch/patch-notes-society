@@ -1,0 +1,55 @@
+name: Issue-Specific Critique
+description: Pressure-test one Patch Notes issue paper.
+title: "[Critique]: "
+labels: ["critique"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for pressure-testing a v0.1 public draft. Specific corrections are more useful than broad agreement or disagreement.
+  - type: dropdown
+    id: issue
+    attributes:
+      label: Which issue?
+      options:
+        - "#001 Prisons"
+        - "#002 Housing / Homelessness"
+        - "#003 Healthcare Affordability"
+        - "#004 Education"
+        - "#005 Addiction / Mental Health"
+        - "#006 Money in Politics / Corruption"
+        - "#007 Immigration"
+        - "#008 Climate / Energy Transition"
+        - "#009 Cost of Living / Inequality"
+        - "#010 Gun Violence / Public Safety"
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What is wrong, missing, or overstated?
+      description: Name the claim, section, or line of reasoning.
+      placeholder: "The draft underweights..."
+    validations:
+      required: true
+  - type: textarea
+    id: better-frame
+    attributes:
+      label: What would be a better framing?
+      description: Suggest a correction, narrower claim, missing category, or sharper distinction.
+    validations:
+      required: false
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sources, examples, or lived/operator evidence
+      description: Add links or examples if you have them. Public links are best.
+    validations:
+      required: false
+  - type: textarea
+    id: risk
+    attributes:
+      label: What would backfire?
+      description: Name implementation risks, incentives, equity risks, legal risks, or metrics that could be gamed.
+    validations:
+      required: false

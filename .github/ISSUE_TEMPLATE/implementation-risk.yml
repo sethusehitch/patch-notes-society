@@ -1,0 +1,45 @@
+name: Implementation Risk
+description: Identify a practical failure mode, incentive problem, or migration-plan risk.
+title: "[Implementation Risk]: "
+labels: ["implementation-risk"]
+body:
+  - type: dropdown
+    id: issue
+    attributes:
+      label: Which issue?
+      options:
+        - "General / applies across issues"
+        - "#001 Prisons"
+        - "#002 Housing / Homelessness"
+        - "#003 Healthcare Affordability"
+        - "#004 Education"
+        - "#005 Addiction / Mental Health"
+        - "#006 Money in Politics / Corruption"
+        - "#007 Immigration"
+        - "#008 Climate / Energy Transition"
+        - "#009 Cost of Living / Inequality"
+        - "#010 Gun Violence / Public Safety"
+    validations:
+      required: true
+  - type: textarea
+    id: failure-mode
+    attributes:
+      label: Failure mode
+      description: What could go wrong in implementation?
+      placeholder: "This would break when..."
+    validations:
+      required: true
+  - type: textarea
+    id: who
+    attributes:
+      label: Who would notice first?
+      description: Name the operator, community, institution, or stakeholder likely to feel the failure.
+    validations:
+      required: false
+  - type: textarea
+    id: mitigation
+    attributes:
+      label: Mitigation or pause condition
+      description: What guardrail, pilot design, metric, or stop condition would reduce the risk?
+    validations:
+      required: false

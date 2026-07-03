@@ -1,0 +1,19 @@
+name: General Feedback
+description: Feedback on the project format, sequencing, brand, or review process.
+title: "[General]: "
+labels: ["general-feedback"]
+body:
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback
+      description: What should change about the project, format, sequencing, or review process?
+    validations:
+      required: true
+  - type: textarea
+    id: next
+    attributes:
+      label: Suggested next action
+      description: What should be revised, cut, added, or prioritized next?
+    validations:
+      required: false

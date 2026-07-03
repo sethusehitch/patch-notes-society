@@ -1,0 +1,44 @@
+name: Source Correction
+description: Add, correct, or challenge a source.
+title: "[Source]: "
+labels: ["source"]
+body:
+  - type: dropdown
+    id: issue
+    attributes:
+      label: Which issue?
+      options:
+        - "General / Movement"
+        - "#001 Prisons"
+        - "#002 Housing / Homelessness"
+        - "#003 Healthcare Affordability"
+        - "#004 Education"
+        - "#005 Addiction / Mental Health"
+        - "#006 Money in Politics / Corruption"
+        - "#007 Immigration"
+        - "#008 Climate / Energy Transition"
+        - "#009 Cost of Living / Inequality"
+        - "#010 Gun Violence / Public Safety"
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source link or citation
+      description: Public links are preferred. Include date/year if relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does it matter?
+      description: Explain the claim it supports, contradicts, narrows, or complicates.
+    validations:
+      required: true
+  - type: textarea
+    id: caveat
+    attributes:
+      label: Caveats or limitations
+      description: Note data limitations, time period, definition issues, or known counterarguments.
+    validations:
+      required: false

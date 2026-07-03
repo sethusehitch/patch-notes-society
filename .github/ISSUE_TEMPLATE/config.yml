@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Read Patch Notes for Society
+    url: https://sethusehitch.github.io/patch-notes-society/
+    about: Start from the public issue index before opening feedback.
