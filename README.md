@@ -11,6 +11,7 @@ This is a civic systems project, not a claim that first drafts solve hard public
 - Reviewer queue: https://sethusehitch.github.io/patch-notes-society/review-queue.html
 - Evidence and source index: https://sethusehitch.github.io/patch-notes-society/evidence.html
 - Prisons policy memo reviewer bundle: https://sethusehitch.github.io/patch-notes-society/expert/001-prisons-reviewer-bundle.html
+- Housing / homelessness pre-memo reviewer bundle: https://sethusehitch.github.io/patch-notes-society/expert/002-housing-homelessness-reviewer-bundle.html
 - Healthcare affordability pre-memo reviewer bundle: https://sethusehitch.github.io/patch-notes-society/expert/003-healthcare-reviewer-bundle.html
 - Addiction / mental health pre-memo reviewer bundle: https://sethusehitch.github.io/patch-notes-society/expert/005-addiction-mental-health-reviewer-bundle.html
 - RSS feed: https://sethusehitch.github.io/patch-notes-society/feed.xml
