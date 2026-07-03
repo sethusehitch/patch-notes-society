@@ -90,7 +90,7 @@ def validate_local_links(path):
 
 
 def main():
-    html_paths = ["index.html", "share.html", "review-queue.html", "evidence.html", "expert/001-prisons-reviewer-bundle.html", "expert/005-addiction-mental-health-reviewer-bundle.html"] + [f"issues/{issue}.html" for issue in REQUIRED_ISSUES]
+    html_paths = ["index.html", "share.html", "review-queue.html", "evidence.html", "expert/001-prisons-reviewer-bundle.html", "expert/003-healthcare-reviewer-bundle.html", "expert/005-addiction-mental-health-reviewer-bundle.html"] + [f"issues/{issue}.html" for issue in REQUIRED_ISSUES]
     for path in html_paths:
         if not (ROOT / path).exists():
             fail(f"missing required page {path}")
@@ -111,6 +111,9 @@ def main():
     for path in [
         "expert/001-prisons-policy-memo-v0.1.md",
         "expert/001-prisons-evidence-matrix-v0.1.md",
+        "expert/003-healthcare-pre-memo-reviewer-brief-v0.1.md",
+        "expert/003-healthcare-evidence-matrix-v0.1.md",
+        "expert/003-healthcare-source-appendix-v0.1.md",
         "expert/005-addiction-mental-health-pre-memo-reviewer-brief-v0.1.md",
         "expert/005-addiction-mental-health-evidence-matrix-v0.1.md",
         "expert/005-addiction-mental-health-source-appendix-v0.1.md",
@@ -123,7 +126,7 @@ def main():
     validate_xml("sitemap.xml")
 
     sitemap = read("sitemap.xml")
-    for url in [SITE, SITE + "share.html", SITE + "review-queue.html", SITE + "evidence.html", SITE + "expert/001-prisons-reviewer-bundle.html", SITE + "expert/005-addiction-mental-health-reviewer-bundle.html", SITE + "feed.xml", SITE + "llms.txt"]:
+    for url in [SITE, SITE + "share.html", SITE + "review-queue.html", SITE + "evidence.html", SITE + "expert/001-prisons-reviewer-bundle.html", SITE + "expert/003-healthcare-reviewer-bundle.html", SITE + "expert/005-addiction-mental-health-reviewer-bundle.html", SITE + "feed.xml", SITE + "llms.txt"]:
         if url not in sitemap:
             fail(f"sitemap missing {url}")
     for issue in REQUIRED_ISSUES:
