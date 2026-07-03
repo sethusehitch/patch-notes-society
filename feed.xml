@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Patch Notes for Society</title>
+    <link>https://sethusehitch.github.io/patch-notes-society/</link>
+    <atom:link href="https://sethusehitch.github.io/patch-notes-society/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>First-principles breakdowns of public systems we inherited, the bugs they create, and the upgrades worth testing next.</description>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 Jul 2026 23:20:00 -0700</lastBuildDate>
+    <item>
+      <title>Patch Notes for Society v0.1 is public</title>
+      <link>https://sethusehitch.github.io/patch-notes-society/</link>
+      <guid isPermaLink="true">https://sethusehitch.github.io/patch-notes-society/</guid>
+      <pubDate>Fri, 03 Jul 2026 23:20:00 -0700</pubDate>
+      <description>Public v0.1 site with ten issue pages, feedback forms, a share kit, and release notes.</description>
+    </item>
+    <item>
+      <title>#001 Prisons</title>
+      <link>https://sethusehitch.github.io/patch-notes-society/issues/001-prisons.html</link>
+      <guid isPermaLink="true">https://sethusehitch.github.io/patch-notes-society/issues/001-prisons.html</guid>
+      <pubDate>Fri, 03 Jul 2026 23:20:00 -0700</pubDate>
+      <description>Accountability, victim repair, incentives, and a practical migration plan.</description>
+    </item>
+    <item>
+      <title>#002 Housing / Homelessness</title>
+      <link>https://sethusehitch.github.io/patch-notes-society/issues/002-housing.html</link>
+      <guid isPermaLink="true">https://sethusehitch.github.io/patch-notes-society/issues/002-housing.html</guid>
+      <pubDate>Fri, 03 Jul 2026 23:20:00 -0700</pubDate>
+      <description>Local optimization, scarcity, visible crisis, and who absorbs system failure.</description>
+    </item>
+    <item>
+      <title>#003 Healthcare Affordability</title>
+      <link>https://sethusehitch.github.io/patch-notes-society/issues/003-healthcare.html</link>
+      <guid isPermaLink="true">https://sethusehitch.github.io/patch-notes-society/issues/003-healthcare.html</guid>
+      <pubDate>Fri, 03 Jul 2026 23:20:00 -0700</pubDate>
+      <description>Prices, insurance, debt, labor, utilization, consolidation, and public trust.</description>
+    </item>
+    <item>
+      <title>#004 Education</title>
+      <link>https://sethusehitch.github.io/patch-notes-society/issues/004-education.html</link>
+      <guid isPermaLink="true">https://sethusehitch.github.io/patch-notes-society/issues/004-education.html</guid>
+      <pubDate>Fri, 03 Jul 2026 23:20:00 -0700</pubDate>
+      <description>Schools as capability systems, not just credential pipelines.</description>
+    </item>
+    <item>
+      <title>#005 Addiction / Mental Health</title>
+      <link>https://sethusehitch.github.io/patch-notes-society/issues/005-addiction-mental-health.html</link>
+      <guid isPermaLink="true">https://sethusehitch.github.io/patch-notes-society/issues/005-addiction-mental-health.html</guid>
+      <pubDate>Fri, 03 Jul 2026 23:20:00 -0700</pubDate>
+      <description>Front doors, blocked hallways, crisis response, rights, and continuity.</description>
+    </item>
+    <item>
+      <title>#006 Money in Politics / Corruption</title>
+      <link>https://sethusehitch.github.io/patch-notes-society/issues/006-money-politics.html</link>
+      <guid isPermaLink="true">https://sethusehitch.github.io/patch-notes-society/issues/006-money-politics.html</guid>
+      <pubDate>Fri, 03 Jul 2026 23:20:00 -0700</pubDate>
+      <description>When corruption is legal system design, not only individual misconduct.</description>
+    </item>
+    <item>
+      <title>#007 Immigration</title>
+      <link>https://sethusehitch.github.io/patch-notes-society/issues/007-immigration.html</link>
+      <guid isPermaLink="true">https://sethusehitch.github.io/patch-notes-society/issues/007-immigration.html</guid>
+      <pubDate>Fri, 03 Jul 2026 23:20:00 -0700</pubDate>
+      <description>Lawful movement, adjudication, local capacity, labor, enforcement, and trust.</description>
+    </item>
+    <item>
+      <title>#008 Climate / Energy Transition</title>
+      <link>https://sethusehitch.github.io/patch-notes-society/issues/008-climate-energy.html</link>
+      <guid isPermaLink="true">https://sethusehitch.github.io/patch-notes-society/issues/008-climate-energy.html</guid>
+      <pubDate>Fri, 03 Jul 2026 23:20:00 -0700</pubDate>
+      <description>A transition that has to be buildable, reliable, affordable, and legitimate.</description>
+    </item>
+    <item>
+      <title>#009 Cost of Living / Inequality</title>
+      <link>https://sethusehitch.github.io/patch-notes-society/issues/009-cost-living.html</link>
+      <guid isPermaLink="true">https://sethusehitch.github.io/patch-notes-society/issues/009-cost-living.html</guid>
+      <pubDate>Fri, 03 Jul 2026 23:20:00 -0700</pubDate>
+      <description>Fixed monthly pain, household stability, wages, housing, care, and resilience.</description>
+    </item>
+    <item>
+      <title>#010 Gun Violence / Public Safety</title>
+      <link>https://sethusehitch.github.io/patch-notes-society/issues/010-gun-violence.html</link>
+      <guid isPermaLink="true">https://sethusehitch.github.io/patch-notes-society/issues/010-gun-violence.html</guid>
+      <pubDate>Fri, 03 Jul 2026 23:20:00 -0700</pubDate>
+      <description>Segmenting suicide, community violence, domestic violence, mass shootings, rights, and trust.</description>
+    </item>
+    <item>
+      <title>Patch Notes for Society Share Kit</title>
+      <link>https://sethusehitch.github.io/patch-notes-society/share.html</link>
+      <guid isPermaLink="true">https://sethusehitch.github.io/patch-notes-society/share.html</guid>
+      <pubDate>Fri, 03 Jul 2026 23:20:00 -0700</pubDate>
+      <description>Manual posting and reviewer outreach copy for the public v0.1 launch.</description>
+    </item>
+  </channel>
+</rss>
