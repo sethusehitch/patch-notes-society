@@ -4,6 +4,8 @@ This repo uses GitHub Issues as the public feedback intake for Patch Notes for S
 
 Reviewer expectations live in `CONTRIBUTING.md`.
 
+Public review hub: https://github.com/sethusehitch/patch-notes-society/issues/1
+
 ## Labels
 
 Primary feedback labels:

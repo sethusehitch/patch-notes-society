@@ -10,6 +10,7 @@ This is a civic systems project, not a claim that first drafts solve hard public
 - Share kit: https://sethusehitch.github.io/patch-notes-society/share.html
 - RSS feed: https://sethusehitch.github.io/patch-notes-society/feed.xml
 - Feedback forms: https://github.com/sethusehitch/patch-notes-society/issues/new/choose
+- v0.2 review hub: https://github.com/sethusehitch/patch-notes-society/issues/1
 - Contributing guide: https://github.com/sethusehitch/patch-notes-society/blob/main/CONTRIBUTING.md
 - Feedback triage guide: https://github.com/sethusehitch/patch-notes-society/blob/main/TRIAGE.md
 - v0.1 release: https://github.com/sethusehitch/patch-notes-society/releases/tag/v0.1

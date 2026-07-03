@@ -7,6 +7,7 @@ The public v0.1 pages are drafts for critique and revision, not final policy sub
 Primary site: https://sethusehitch.github.io/patch-notes-society/
 Repository: https://github.com/sethusehitch/patch-notes-society
 Feedback forms: https://github.com/sethusehitch/patch-notes-society/issues/new/choose
+v0.2 review hub: https://github.com/sethusehitch/patch-notes-society/issues/1
 Contributing guide: https://github.com/sethusehitch/patch-notes-society/blob/main/CONTRIBUTING.md
 Triage guide: https://github.com/sethusehitch/patch-notes-society/blob/main/TRIAGE.md
 Share kit: https://sethusehitch.github.io/patch-notes-society/share.html

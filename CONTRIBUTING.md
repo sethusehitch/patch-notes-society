@@ -8,6 +8,10 @@ Use the public feedback forms:
 
 https://github.com/sethusehitch/patch-notes-society/issues/new/choose
 
+The public v0.2 review hub is here:
+
+https://github.com/sethusehitch/patch-notes-society/issues/1
+
 The most useful contributions are:
 
 - factual corrections;
