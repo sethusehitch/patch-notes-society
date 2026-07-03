@@ -102,6 +102,12 @@ def main():
             fail(f"missing required file {path}")
         validate_public_text(path)
 
+    for issue in REQUIRED_ISSUES:
+        path = f"papers/{issue}.md"
+        if not (ROOT / path).exists():
+            fail(f"missing required markdown paper {path}")
+        validate_public_text(path)
+
     validate_xml("feed.xml")
     validate_xml("sitemap.xml")
 
@@ -113,6 +119,9 @@ def main():
         url = SITE + f"issues/{issue}.html"
         if url not in sitemap:
             fail(f"sitemap missing {url}")
+        paper_url = SITE + f"papers/{issue}.md"
+        if paper_url not in sitemap:
+            fail(f"sitemap missing {paper_url}")
 
     robots = read("robots.txt")
     for token in ["Sitemap:", "Feed:", "LLMS:"]:
@@ -123,6 +132,8 @@ def main():
     for issue in REQUIRED_ISSUES:
         if f"issues/{issue}.html" not in llms:
             fail(f"llms.txt missing {issue}")
+        if f"papers/{issue}.md" not in llms:
+            fail(f"llms.txt missing markdown paper {issue}")
 
     print("site validation ok")
 

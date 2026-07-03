@@ -27,6 +27,18 @@ Release: https://github.com/sethusehitch/patch-notes-society/releases/tag/v0.1
 - #009 Cost of Living / Inequality: https://sethusehitch.github.io/patch-notes-society/issues/009-cost-living.html
 - #010 Gun Violence / Public Safety: https://sethusehitch.github.io/patch-notes-society/issues/010-gun-violence.html
 
+## Markdown Paper Downloads
+- #001 Prisons: https://sethusehitch.github.io/patch-notes-society/papers/001-prisons.md
+- #002 Housing / Homelessness: https://sethusehitch.github.io/patch-notes-society/papers/002-housing.md
+- #003 Healthcare Affordability: https://sethusehitch.github.io/patch-notes-society/papers/003-healthcare.md
+- #004 Education: https://sethusehitch.github.io/patch-notes-society/papers/004-education.md
+- #005 Addiction / Mental Health: https://sethusehitch.github.io/patch-notes-society/papers/005-addiction-mental-health.md
+- #006 Money in Politics / Corruption: https://sethusehitch.github.io/patch-notes-society/papers/006-money-politics.md
+- #007 Immigration: https://sethusehitch.github.io/patch-notes-society/papers/007-immigration.md
+- #008 Climate / Energy Transition: https://sethusehitch.github.io/patch-notes-society/papers/008-climate-energy.md
+- #009 Cost of Living / Inequality: https://sethusehitch.github.io/patch-notes-society/papers/009-cost-living.md
+- #010 Gun Violence / Public Safety: https://sethusehitch.github.io/patch-notes-society/papers/010-gun-violence.md
+
 ## Review Standard
 
 Useful feedback is specific:
