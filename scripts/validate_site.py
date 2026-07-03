@@ -98,7 +98,7 @@ def main():
         validate_local_links(path)
         validate_public_text(path)
 
-    for path in [".nojekyll", "README.md", "CONTRIBUTING.md", "TRIAGE.md", "llms.txt", "robots.txt", "feed.xml", "sitemap.xml", "scripts/verify_remaining_reviewer_bundles_live.py", "scripts/preflight_remaining_reviewer_bundles_publish.py"]:
+    for path in [".nojekyll", "README.md", "CONTRIBUTING.md", "TRIAGE.md", "llms.txt", "robots.txt", "feed.xml", "sitemap.xml", "scripts/verify_remaining_reviewer_bundles_live.py", "scripts/preflight_remaining_reviewer_bundles_publish.py", "scripts/publish_remaining_reviewer_bundles_after_approval.py"]:
         if not (ROOT / path).exists():
             fail(f"missing required file {path}")
         validate_public_text(path)

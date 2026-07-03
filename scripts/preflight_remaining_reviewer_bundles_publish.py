@@ -11,7 +11,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 NETWORKING = ROOT.parent
-EXPECTED_LEFT_RIGHT = "0\t3"
+EXPECTED_LEFT_RIGHT = "0\t4"
 EXPECTED_COMMITS = {
     "0243190": "Add remaining reviewer bundles",
     "7c447e3": "Add live verifier for remaining reviewer bundles",
@@ -39,6 +39,7 @@ REQUIRED_FILES = [
     "expert/010-gun-violence-evidence-matrix-v0.1.md",
     "expert/010-gun-violence-source-appendix-v0.1.md",
     "scripts/verify_remaining_reviewer_bundles_live.py",
+    "scripts/publish_remaining_reviewer_bundles_after_approval.py",
 ]
 
 CONTROL_FILES = [
@@ -66,12 +67,12 @@ def require(condition: bool, message: str) -> None:
 def main() -> int:
     try:
         status = run(["git", "status", "--short", "--branch"])
-        require(status == "## main...origin/main [ahead 3]", f"unexpected git status: {status}")
+        require(status == "## main...origin/main [ahead 4]", f"unexpected git status: {status}")
 
         divergence = run(["git", "rev-list", "--left-right", "--count", "origin/main...HEAD"])
         require(divergence == EXPECTED_LEFT_RIGHT, f"unexpected divergence: {divergence}")
 
-        log = run(["git", "log", "--oneline", "--max-count=3"])
+        log = run(["git", "log", "--oneline", "--max-count=8"])
         for commit, subject in EXPECTED_COMMITS.items():
             require(f"{commit} {subject}" in log, f"missing expected commit {commit} {subject}")
 
