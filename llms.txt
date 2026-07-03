@@ -12,6 +12,7 @@ Contributing guide: https://github.com/sethusehitch/patch-notes-society/blob/mai
 Triage guide: https://github.com/sethusehitch/patch-notes-society/blob/main/TRIAGE.md
 Share kit: https://sethusehitch.github.io/patch-notes-society/share.html
 Evidence and source index: https://sethusehitch.github.io/patch-notes-society/evidence.html
+Prisons policy memo reviewer bundle: https://sethusehitch.github.io/patch-notes-society/expert/001-prisons-reviewer-bundle.html
 RSS feed: https://sethusehitch.github.io/patch-notes-society/feed.xml
 Release: https://github.com/sethusehitch/patch-notes-society/releases/tag/v0.1
 

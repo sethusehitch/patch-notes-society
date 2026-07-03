@@ -76,6 +76,7 @@ def validate_local_links(path):
     for href in re.findall(r'href="([^"]+)"', text):
         if href.startswith(("http://", "https://", "#", "mailto:")):
             continue
+        href = href.split("#", 1)[0]
         if href.startswith("/patch-notes-society/"):
             target = ROOT / href.removeprefix("/patch-notes-society/")
             if not target.exists():
@@ -89,7 +90,7 @@ def validate_local_links(path):
 
 
 def main():
-    html_paths = ["index.html", "share.html", "evidence.html"] + [f"issues/{issue}.html" for issue in REQUIRED_ISSUES]
+    html_paths = ["index.html", "share.html", "evidence.html", "expert/001-prisons-reviewer-bundle.html"] + [f"issues/{issue}.html" for issue in REQUIRED_ISSUES]
     for path in html_paths:
         if not (ROOT / path).exists():
             fail(f"missing required page {path}")
@@ -107,12 +108,16 @@ def main():
         if not (ROOT / path).exists():
             fail(f"missing required markdown paper {path}")
         validate_public_text(path)
+    for path in ["expert/001-prisons-policy-memo-v0.1.md", "expert/001-prisons-evidence-matrix-v0.1.md"]:
+        if not (ROOT / path).exists():
+            fail(f"missing required expert artifact {path}")
+        validate_public_text(path)
 
     validate_xml("feed.xml")
     validate_xml("sitemap.xml")
 
     sitemap = read("sitemap.xml")
-    for url in [SITE, SITE + "share.html", SITE + "evidence.html", SITE + "feed.xml", SITE + "llms.txt"]:
+    for url in [SITE, SITE + "share.html", SITE + "evidence.html", SITE + "expert/001-prisons-reviewer-bundle.html", SITE + "feed.xml", SITE + "llms.txt"]:
         if url not in sitemap:
             fail(f"sitemap missing {url}")
     for issue in REQUIRED_ISSUES:
