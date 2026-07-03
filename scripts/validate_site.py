@@ -1,0 +1,131 @@
+#!/usr/bin/env python3
+from html.parser import HTMLParser
+from pathlib import Path
+import json
+import re
+import sys
+import xml.etree.ElementTree as ET
+
+ROOT = Path(__file__).resolve().parents[1]
+SITE = "https://sethusehitch.github.io/patch-notes-society/"
+REQUIRED_ISSUES = [
+    "001-prisons",
+    "002-housing",
+    "003-healthcare",
+    "004-education",
+    "005-addiction-mental-health",
+    "006-money-politics",
+    "007-immigration",
+    "008-climate-energy",
+    "009-cost-living",
+    "010-gun-violence",
+]
+FORBIDDEN_PATTERNS = [
+    "Hold Before Publication",
+    "/Users/sethsaperstein",
+    "Approval required",
+    "Do not publish",
+    "Local publishable draft candidate",
+]
+
+
+def fail(message):
+    print(f"FAIL: {message}", file=sys.stderr)
+    raise SystemExit(1)
+
+
+def read(path):
+    return (ROOT / path).read_text(encoding="utf-8")
+
+
+def validate_html(path):
+    text = read(path)
+    HTMLParser().feed(text)
+    if "<title>" not in text:
+        fail(f"{path} missing title")
+    if "rel=\"canonical\"" not in text:
+        fail(f"{path} missing canonical link")
+    if "application/ld+json" not in text:
+        fail(f"{path} missing JSON-LD")
+    blocks = re.findall(r'<script type="application/ld\+json">\n(.*?)\n</script>', text, re.S)
+    if not blocks:
+        fail(f"{path} missing parseable JSON-LD block")
+    for block in blocks:
+        json.loads(block)
+    if "assets/social-card.png" not in text:
+        fail(f"{path} missing social preview image")
+    if "feed.xml" not in text:
+        fail(f"{path} missing RSS discovery")
+    if "llms.txt" not in text:
+        fail(f"{path} missing llms.txt discovery")
+
+
+def validate_public_text(path):
+    text = read(path)
+    for pattern in FORBIDDEN_PATTERNS:
+        if pattern in text:
+            fail(f"{path} contains forbidden marker: {pattern}")
+
+
+def validate_xml(path):
+    ET.parse(ROOT / path)
+
+
+def validate_local_links(path):
+    text = read(path)
+    for href in re.findall(r'href="([^"]+)"', text):
+        if href.startswith(("http://", "https://", "#", "mailto:")):
+            continue
+        if href.startswith("/patch-notes-society/"):
+            target = ROOT / href.removeprefix("/patch-notes-society/")
+            if not target.exists():
+                fail(f"{path} has missing site-root href {href}")
+            continue
+        target = (ROOT / path).parent / href
+        if target.is_dir():
+            target = target / "index.html"
+        if not target.exists():
+            fail(f"{path} has missing local href {href}")
+
+
+def main():
+    html_paths = ["index.html", "share.html"] + [f"issues/{issue}.html" for issue in REQUIRED_ISSUES]
+    for path in html_paths:
+        if not (ROOT / path).exists():
+            fail(f"missing required page {path}")
+        validate_html(path)
+        validate_local_links(path)
+        validate_public_text(path)
+
+    for path in ["README.md", "CONTRIBUTING.md", "TRIAGE.md", "llms.txt", "robots.txt", "feed.xml", "sitemap.xml"]:
+        if not (ROOT / path).exists():
+            fail(f"missing required file {path}")
+        validate_public_text(path)
+
+    validate_xml("feed.xml")
+    validate_xml("sitemap.xml")
+
+    sitemap = read("sitemap.xml")
+    for url in [SITE, SITE + "share.html", SITE + "feed.xml", SITE + "llms.txt"]:
+        if url not in sitemap:
+            fail(f"sitemap missing {url}")
+    for issue in REQUIRED_ISSUES:
+        url = SITE + f"issues/{issue}.html"
+        if url not in sitemap:
+            fail(f"sitemap missing {url}")
+
+    robots = read("robots.txt")
+    for token in ["Sitemap:", "Feed:", "LLMS:"]:
+        if token not in robots:
+            fail(f"robots.txt missing {token}")
+
+    llms = read("llms.txt")
+    for issue in REQUIRED_ISSUES:
+        if f"issues/{issue}.html" not in llms:
+            fail(f"llms.txt missing {issue}")
+
+    print("site validation ok")
+
+
+if __name__ == "__main__":
+    main()
