@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patch Notes for Society</title>
+  <meta name="description" content="First-principles breakdowns of public systems we inherited, the bugs they create, and the upgrades worth testing next.">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #18212f;
+      --muted: #617083;
+      --line: #d9e0e8;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --accent: #0f766e;
+      --accent-2: #8b5cf6;
+      --warn: #b45309;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.55;
+    }
+    header, main, footer {
+      width: min(1120px, calc(100% - 36px));
+      margin: 0 auto;
+    }
+    header { padding: 56px 0 30px; }
+    .eyebrow {
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 750;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    h1 {
+      max-width: 780px;
+      margin: 10px 0 14px;
+      font-size: clamp(42px, 7vw, 86px);
+      line-height: .94;
+      letter-spacing: 0;
+    }
+    .lede {
+      max-width: 790px;
+      margin: 0;
+      color: #354255;
+      font-size: 20px;
+    }
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 26px;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 16px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      color: var(--ink);
+      background: var(--panel);
+      text-decoration: none;
+      font-weight: 720;
+    }
+    .button.primary {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: #fff;
+    }
+    section {
+      margin: 18px 0;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+    h2 { margin: 0 0 14px; font-size: 24px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .issue {
+      min-height: 152px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fbfcfd;
+    }
+    .issue strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 17px;
+    }
+    .issue p {
+      min-height: 48px;
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    a { color: #0f5f8c; text-underline-offset: 3px; }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      padding: 0 8px;
+      border-radius: 999px;
+      background: #eef8f7;
+      color: #0f766e;
+      font-size: 12px;
+      font-weight: 750;
+    }
+    .split {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 16px;
+      align-items: start;
+    }
+    ul { margin: 10px 0 0; padding-left: 22px; }
+    li + li { margin-top: 6px; }
+    .note {
+      border-left: 4px solid var(--warn);
+      padding-left: 14px;
+      color: #4a5568;
+    }
+    footer {
+      padding: 28px 0 42px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @media (max-width: 820px) {
+      header { padding-top: 34px; }
+      .grid, .split { grid-template-columns: 1fr; }
+      section { padding: 18px; }
+      .lede { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="eyebrow">A civic systems project</div>
+    <h1>Patch Notes for Society</h1>
+    <p class="lede">First-principles breakdowns of public systems we inherited, the bugs they create, and the upgrades worth testing next.</p>
+    <div class="actions">
+      <a class="button primary" href="#issues">Read the papers</a>
+      <a class="button" href="#review">Review a draft</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="split">
+      <div>
+        <h2>What This Is</h2>
+        <p>Patch Notes for Society looks at public problems as inherited systems: history, incentives, failure modes, tradeoffs, metrics, migration plans, and revision based on critique.</p>
+        <p>These are public v0.1 entry points. The policy track is separate: evidence matrices, reviewer packets, and submission-grade memos under The Better Systems Project.</p>
+      </div>
+      <div class="note">
+        <p><strong>The standard:</strong> do not pretend the first draft is right. Make the system easier to inspect, criticize, test, fund, govern, and improve.</p>
+      </div>
+    </section>
+
+    <section id="issues">
+      <h2>Public Issue Papers</h2>
+      <div class="grid">
+        <article class="issue">
+          <span class="tag">#001</span>
+          <strong>Prisons</strong>
+          <p>Accountability, victim repair, incentives, and a practical migration plan.</p>
+          <a href="https://medium.com/@sethsaps/a-better-prison-system-284caa61c7cb">Read the essay</a><br>
+          <a href="https://medium.com/@sethsaper/how-we-got-here-and-how-we-build-a-better-prison-system-ec8f28865dd8">Read the migration plan</a>
+        </article>
+        <article class="issue">
+          <span class="tag">#002</span>
+          <strong>Housing / Homelessness</strong>
+          <p>Local optimization, scarcity, visible crisis, and who absorbs system failure.</p>
+          <a href="https://gist.github.com/sethusehitch/437800ae2447493e3b48692737e45de1">Read paper</a>
+        </article>
+        <article class="issue">
+          <span class="tag">#003</span>
+          <strong>Healthcare Affordability</strong>
+          <p>Prices, insurance, debt, labor, utilization, consolidation, and public trust.</p>
+          <a href="https://gist.github.com/sethusehitch/94d956c02bc10cdec4890bbd403708c0">Read paper</a>
+        </article>
+        <article class="issue">
+          <span class="tag">#004</span>
+          <strong>Education</strong>
+          <p>Schools as capability systems, not just credential pipelines.</p>
+          <a href="https://gist.github.com/sethusehitch/72dab24499fcbd1fb37d96f70386763c">Read paper</a>
+        </article>
+        <article class="issue">
+          <span class="tag">#005</span>
+          <strong>Addiction / Mental Health</strong>
+          <p>Front doors, blocked hallways, crisis response, rights, and continuity.</p>
+          <a href="https://gist.github.com/sethusehitch/7dd4e67719ef3e7fc5a7e23fed2c8ea0">Read paper</a>
+        </article>
+        <article class="issue">
+          <span class="tag">#006</span>
+          <strong>Money in Politics</strong>
+          <p>When corruption is legal system design, not only individual misconduct.</p>
+          <a href="https://gist.github.com/sethusehitch/3b82207ac3a2da0de0cefeea7080fe1c">Read paper</a>
+        </article>
+        <article class="issue">
+          <span class="tag">#007</span>
+          <strong>Immigration</strong>
+          <p>Lawful movement, adjudication, local capacity, labor, enforcement, and trust.</p>
+          <a href="https://gist.github.com/sethusehitch/38477a1cde708404d7172a58d6375615">Read paper</a>
+        </article>
+        <article class="issue">
+          <span class="tag">#008</span>
+          <strong>Climate / Energy</strong>
+          <p>A transition that has to be buildable, reliable, affordable, and legitimate.</p>
+          <a href="https://gist.github.com/sethusehitch/652bb1de09030b9730090b925e0188b1">Read paper</a>
+        </article>
+        <article class="issue">
+          <span class="tag">#009</span>
+          <strong>Cost of Living / Inequality</strong>
+          <p>Fixed monthly pain, household stability, wages, housing, care, and resilience.</p>
+          <a href="https://gist.github.com/sethusehitch/1d9d957bc786d6a9185afd525833c4f3">Read paper</a>
+        </article>
+        <article class="issue">
+          <span class="tag">#010</span>
+          <strong>Gun Violence / Public Safety</strong>
+          <p>Segmenting suicide, community violence, domestic violence, mass shootings, rights, and trust.</p>
+          <a href="https://gist.github.com/sethusehitch/6252d4585761d51854199d1f6ffbf4ec">Read paper</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="review" class="split">
+      <div>
+        <h2>Reviewers Wanted</h2>
+        <p>I am looking for critique from people who know these systems from the inside: researchers, operators, practitioners, lawyers, advocates, public officials, funders, community leaders, and people directly affected by these systems.</p>
+      </div>
+      <div>
+        <p>Useful feedback is specific:</p>
+        <ul>
+          <li>Where is the history wrong or incomplete?</li>
+          <li>Which incentive is missing?</li>
+          <li>Which reform would backfire?</li>
+          <li>What metric would be gamed?</li>
+          <li>Which paper should become a formal policy memo first?</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Patch Notes for Society. Public v0.1 drafts for critique and revision.
+  </footer>
+</body>
+</html>
