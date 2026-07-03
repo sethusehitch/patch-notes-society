@@ -3,3 +3,4 @@ Allow: /
 
 Sitemap: https://sethusehitch.github.io/patch-notes-society/sitemap.xml
 Feed: https://sethusehitch.github.io/patch-notes-society/feed.xml
+LLMS: https://sethusehitch.github.io/patch-notes-society/llms.txt
