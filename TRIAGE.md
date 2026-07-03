@@ -2,6 +2,8 @@
 
 This repo uses GitHub Issues as the public feedback intake for Patch Notes for Society v0.1.
 
+Reviewer expectations live in `CONTRIBUTING.md`.
+
 ## Labels
 
 Primary feedback labels:
