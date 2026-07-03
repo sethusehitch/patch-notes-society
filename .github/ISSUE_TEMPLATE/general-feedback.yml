@@ -1,7 +1,7 @@
 name: General Feedback
 description: Feedback on the project format, sequencing, brand, or review process.
 title: "[General]: "
-labels: ["general-feedback"]
+labels: ["general-feedback", "needs-triage"]
 body:
   - type: textarea
     id: feedback

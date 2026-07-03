@@ -1,7 +1,7 @@
 name: Source Correction
 description: Add, correct, or challenge a source.
 title: "[Source]: "
-labels: ["source"]
+labels: ["source", "needs-triage"]
 body:
   - type: dropdown
     id: issue

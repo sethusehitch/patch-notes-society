@@ -34,14 +34,22 @@ Issue labels:
 
 Use the `v0.2 Review Cycle` milestone for feedback that should be considered before deciding which issue becomes the first submission-grade policy memo.
 
+## Queue Links
+
+- Needs triage: https://github.com/sethusehitch/patch-notes-society/issues?q=is%3Aissue%20is%3Aopen%20label%3Aneeds-triage
+- Policy memo candidates: https://github.com/sethusehitch/patch-notes-society/issues?q=is%3Aissue%20is%3Aopen%20label%3Apolicy-memo-candidate
+- Source corrections: https://github.com/sethusehitch/patch-notes-society/issues?q=is%3Aissue%20is%3Aopen%20label%3Asource
+- Implementation risks: https://github.com/sethusehitch/patch-notes-society/issues?q=is%3Aissue%20is%3Aopen%20label%3Aimplementation-risk
+- v0.2 Review Cycle: https://github.com/sethusehitch/patch-notes-society/milestone/1
+
 ## Triage Steps
 
-1. Add `needs-triage` if the issue does not already have it.
+1. Confirm `needs-triage` is present. The public issue forms should add it automatically.
 2. Confirm the feedback type label: `critique`, `source`, `implementation-risk`, or `general-feedback`.
 3. Add the issue label if the feedback is topic-specific.
 4. Add the `v0.2 Review Cycle` milestone if the feedback could change a public draft, source appendix, or memo priority.
 5. If the feedback contains a concrete correction, source, implementation risk, or metric warning, add `policy-memo-candidate`.
-6. When reviewed, add `reviewed` and remove `needs-triage`.
+6. When reviewed and logged, add `reviewed` and remove `needs-triage`.
 
 ## Response Standard
 

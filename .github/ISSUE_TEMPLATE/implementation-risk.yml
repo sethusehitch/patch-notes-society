@@ -1,7 +1,7 @@
 name: Implementation Risk
 description: Identify a practical failure mode, incentive problem, or migration-plan risk.
 title: "[Implementation Risk]: "
-labels: ["implementation-risk"]
+labels: ["implementation-risk", "needs-triage"]
 body:
   - type: dropdown
     id: issue
