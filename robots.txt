@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sethusehitch.github.io/patch-notes-society/sitemap.xml
