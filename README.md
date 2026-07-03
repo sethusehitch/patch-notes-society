@@ -15,6 +15,11 @@ This is a civic systems project, not a claim that first drafts solve hard public
 - Healthcare affordability pre-memo reviewer bundle: https://sethusehitch.github.io/patch-notes-society/expert/003-healthcare-reviewer-bundle.html
 - Education pre-memo reviewer bundle: https://sethusehitch.github.io/patch-notes-society/expert/004-education-reviewer-bundle.html
 - Addiction / mental health pre-memo reviewer bundle: https://sethusehitch.github.io/patch-notes-society/expert/005-addiction-mental-health-reviewer-bundle.html
+- Money in politics pre-memo reviewer bundle: https://sethusehitch.github.io/patch-notes-society/expert/006-money-politics-reviewer-bundle.html
+- Immigration pre-memo reviewer bundle: https://sethusehitch.github.io/patch-notes-society/expert/007-immigration-reviewer-bundle.html
+- Climate / energy pre-memo reviewer bundle: https://sethusehitch.github.io/patch-notes-society/expert/008-climate-energy-reviewer-bundle.html
+- Cost of living pre-memo reviewer bundle: https://sethusehitch.github.io/patch-notes-society/expert/009-cost-living-reviewer-bundle.html
+- Gun violence / public safety pre-memo reviewer bundle: https://sethusehitch.github.io/patch-notes-society/expert/010-gun-violence-reviewer-bundle.html
 - RSS feed: https://sethusehitch.github.io/patch-notes-society/feed.xml
 - Feedback forms: https://github.com/sethusehitch/patch-notes-society/issues/new/choose
 - v0.2 review hub: https://github.com/sethusehitch/patch-notes-society/issues/1
